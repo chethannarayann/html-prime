@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Install Apache") {
             steps{
-                echo "Installing Apache"
+                sh 'sudo apt install apache2 -y'
             }
         } 
         stage("Deploy Application") {
