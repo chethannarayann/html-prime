@@ -4,6 +4,7 @@ pipeline {
     stage('fetchFetch code ') {
       steps {
         git(url: 'git@github.com:chethannarayann/html-prime.git', poll: true, branch: 'main')
+        git(url: 'https://github.com/chethannarayann/html-prime.git', branch: 'main', poll: true)
       }
     }
 
